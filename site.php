@@ -6,6 +6,8 @@
     <title>Try PHP For The First Time</title>
 </head>
 <body>
-    
+    <?php
+        echo("Hello World!")
+    ?>
 </body>
 </html>
