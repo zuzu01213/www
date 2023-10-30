@@ -1,4 +1,6 @@
 <!-- <?php
+    // VARIABLES DAN DATA TYPES
+
      $name = "Bro Code";
      $food = "Pizza";
      $email = "fake@gmail";
@@ -35,6 +37,7 @@
 
 
     // Arithmetic operators
+
     // + - * / ** %
     // $x = 10;
     // $y = 3;
@@ -83,6 +86,8 @@
     </form>
 </body>
 </html>
+
+        // GET DAN POST
 
 <?php
     echo "{$_POST["username"]} <br>";
@@ -167,10 +172,35 @@
     <title>Try php for the first time</title>
 </head>
 <body>
-    <form action="site.php" method="post" ></form>
-    <h1>affaa</h1>
+    <form action="site.php" method="post" >
+        <label for="">radius:</label>
+        <input type="text" name="radius" id=""><br>
+        <input type="submit" value="calculate" >
+    </form>
 </body>
 </html>
 <?php
+    $radius = $_POST["radius"];
+    $circumference = null;
+    $area = null;
+    $joko = null;
+    $volume = null;
 
+    $circumference = 1 * pi() * $radius;
+    $circumference = round($circumference, 2);
+
+    $area = pi() * pow($radius, 2);
+    $area = round($area, 2);
+
+    echo "Circumference = {$circumference}cm <br>";
+    echo "Distance = {$area}cm^2 <br>";
+
+    $volume = 4/3 * pi() * pow($radius, 3);
+    $volume = round($volume, 3);
+
+    $same = $radius * (pi()* 3) ;
+    $same = round($same, 1);
+
+
+    echo "same  {$same}cm laptop size <br>"
 ?>
