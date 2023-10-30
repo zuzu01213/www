@@ -8,10 +8,9 @@
 <body>
     <?php
     $phrase = "To be or not to be";
-    $age = 18;
-    $gpa = 20.5;
-    $isMale  =false ;
-    echo strtolower($phrase);
+ 
+    echo substr($phrase, 8, 4)
     ?>
+    
 </body>
 </html>
