@@ -7,7 +7,11 @@
 </head>
 <body>
     <?php
-        echo("Hello World!")
+    $phrase = "To be or not to be";
+    $age = 18;
+    $gpa = 20.5;
+    $isMale  =false ;
+    echo strtolower($phrase);
     ?>
 </body>
 </html>
