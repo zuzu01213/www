@@ -164,7 +164,7 @@
     echo $total;
 ?> ---------------------------------------------------------------------------------------------------------------->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -183,7 +183,7 @@
     $radius = $_POST["radius"];
     $circumference = null;
     $area = null;
-    $joko = null;
+    $same = null;
     $volume = null;
 
     $circumference = 1 * pi() * $radius;
@@ -197,10 +197,12 @@
 
     $volume = 4/3 * pi() * pow($radius, 3);
     $volume = round($volume, 3);
+    
+    echo "volume = {$volume}cm^3 <br>";
 
     $same = $radius * (pi()* 3) ;
     $same = round($same, 1);
 
+    echo "same has {$same}cm laptop size <br>"
+?> ---------------------------------------------------------------------------------------------------------->
 
-    echo "same  {$same}cm laptop size <br>"
-?>
