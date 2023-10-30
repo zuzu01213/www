@@ -101,7 +101,7 @@ function isLeap(year) {
 }
 sLeap(40);
 
-var guestList = ["Angela", "Pam", "James", "Nakia", "Paul"];
+var guestList = ["Angela", "Pam", "James", "Elsa", "Paul"];
 var guestName = prompt("Enter your name");
 if (guestList.includes(guestName)){
     alert("Welcome")
