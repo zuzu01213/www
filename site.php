@@ -1,4 +1,6 @@
 <!-- <?php
+
+    // LESSON 1
     // VARIABLES DAN DATA TYPES
 
      $name = "Bro Code";
@@ -35,6 +37,7 @@
     $total = $quantity * $price;
     echo "Your total is: $$total <br>";
 
+    // LESSON 2
 
     // Arithmetic operators
 
@@ -87,6 +90,7 @@
 </body>
 </html>
 
+        // LESSON 3
         // GET DAN POST
 
 <?php
@@ -148,6 +152,8 @@
     $z = $_POST["Z"];
     $total = null;
 
+
+    // LESSON 4
     // MATH FUNCTIONS 
 
     $total = abs($x);
@@ -207,6 +213,9 @@
 ?> ---------------------------------------------------------------------------------------------------------->
 
 <!--<?php 
+
+        // LESSON 5
+
         // IF AND ELSE STATEMENT
 
     $age = 66;
@@ -284,6 +293,8 @@
 
 <!--<?php 
 
+    // LESSON 6
+    
     // logical operations = combine conditional statements
     // if(!condition1)
 
@@ -329,6 +340,8 @@
 
 
 <!--<?php 
+
+    // LESSON 7
 
     // switch = replacement to use many elseif statements
     //          more efficient, less code to write.
@@ -386,11 +399,28 @@
     }
 ?>----------------------------------------------------------------------------------------------------->
 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="site.php" method="post" >
+        <label for="">Enter a number to count down from: </label><br>
+        <input type="text" name="counter" id="">
+        <input type="submit" value="start">
+    </form>
+</body>
+</html> -->
 <!--<?php
 
-        // for loop = repeat some code a certain of times
+        // LESSON 8
 
-    for($i = 1; $i <= 100; $i++){
+        // for loop = repeat some code a certain of times
+    $counter = $_POST['counter'];
+    for($i = 100; $i <=$counter; $i++){
          if($i % 3 === 0 && $i % 5 === 0){
             echo "FizzBuzz <br>";
          }
@@ -422,10 +452,78 @@
     }
 ?>---------------------------------------------------------------------------->
 
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="site.php" method="post" >
+        <label for="">Enter a number to count down from: </label><br>
+        <input type="text" name="counter" id="">
+        <input type="submit" value="start">
+    </form>
+</body>
+</html>
 <?php 
 
-    for($i = 0; $i <=20; $i+=2) { 
-        echo $i . "<br>";
-    }
+$counter = $_POST['counter'];
+for($i = $counter; $i > 0; $i--){
+    echo $i . "<br>";
+}
+?>---->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="site.php" method="post" >
+        <input type="submit" name="stop" value="stop">
+    </form>
+</body>
+</html>
 
+<?php 
+
+    // LESSON 9
+
+    // while loop = do some code infinitely while some
+    // condition remains true
+
+    $seconds = 0;
+    $running = true;
+
+    while($running){
+
+        if(isset($_POST["stop"])){
+            $running = false;
+        }else {
+            // wait 1 seconds
+            $seconds++;
+            echo $seconds . "<br>";   
+        } 
+    }
+    
+
+?>---->
+
+<?php 
+
+    // LESSON 10
+
+    // array = "variable" which can hold more than one value at a time
+
+    $foods = array("apple", "orange", "banana", "coconut");
+
+    $foods[0] = "pineapple";
+
+   foreach($foods as $food){
+        echo $food . "<br>";
+   }
 ?>
+
