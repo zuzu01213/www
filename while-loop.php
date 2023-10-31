@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="site.php" method="post" >
+    <form action="while-loop.php" method="post" >
         <input type="submit" name="stop" value="stop">
     </form>
 </body>

@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="site.php" method="post">
+    <form action="associative-array.php" method="post">
     <label for="">Enter a country</label> <br>
     <input type="text" name="country">
     <input type="submit">
