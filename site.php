@@ -282,7 +282,7 @@
 
 ?> -------------------------------------------------------------------------------------------------------->
 
-<?php 
+<!--<?php 
 
     // logical operations = combine conditional statements
     // if(!condition1)
@@ -291,13 +291,141 @@
     // || = True if at least one condition is true
     // ! = true if false. false if true.
 
-    $temp = 15;
+    $temp = 11;
+    $weather = false;
+    $age = 25;
+    $citizen = false;
 
     if($temp < 0 || $temp > 30){
-        echo "The weather is good";
+        echo "The weather is good. <br>";
     } 
     else {
-        echo "The weather is bad";
+        echo "The weather is bad. <br>";
+    }
+    if(!$weather && $temp < 0 || $temp > 30){
+        echo "It's sunny. <br>";
+    } else {
+        echo "It's cloudy. <br>";
+    }
+
+    if($age >= 18 && !$citizen){
+        echo "You can vote for presidents of the weather. <br>";
+    } else if($age >= 18 && $citizen){
+        echo "You can't vote for presidents of the weather.<br>";
+    }
+
+    $child = true;
+    $senior = false;
+    $ticket = null;
+
+    if($child || $senior){
+        $ticket = 10;
+    }
+    else {
+        $ticket = 15;
+    }
+    echo"The ticket prize is: $$ticket.";
+?>-------------------------------------------------------------------------------------------------------->
+
+
+<!--<?php 
+
+    // switch = replacement to use many elseif statements
+    //          more efficient, less code to write.
+
+    $grade = "A";
+
+    switch($grade){
+        case "A":
+            echo "You are Excellent <br>";
+            break;
+        case "B":
+            echo "You are Very good <br>";
+            break;
+        case "C":
+            echo "You are Good <br>";
+            break;
+        case "D":
+            echo "You are Poor <br>";
+            break;
+        case "F":
+            echo "You are Fail <br>";
+            break;
+        default:
+            echo "{$grade} is Not a grade <br>";
+            break;
+    }
+
+    $day = date("l");
+    $day = "saturday";
+
+    switch($day){
+        case "monday":
+            echo"I hate Monday <br>";
+            break;
+         case "tuesday":
+            echo"It is Taco Tuesday <br>";
+            break;
+         case "wednesday":
+            echo"The work week is half over! <br>";
+            break;
+         case "thursday":
+            echo"It's almost the weekend! <br>";
+            break;
+         case "friday":
+            echo"The weekend is here@ <br>";
+            break;
+         case "saturday":
+            echo"Time to party! <br>";
+            break;
+         case "sunday":
+            echo"Zelda chill & relax <br>";
+            break;
+        default:
+            echo"{$day} is not a day <br>";
+    }
+?>----------------------------------------------------------------------------------------------------->
+
+<!--<?php
+
+        // for loop = repeat some code a certain of times
+
+    for($i = 1; $i <= 100; $i++){
+         if($i % 3 === 0 && $i % 5 === 0){
+            echo "FizzBuzz <br>";
+         }
+         else if($i % 3 ===0){
+            echo "Fizz <br>";
+         }
+         else if($i % 5 ===0){
+            echo "Buzz <br>";
+         }
+         else {
+            echo $i. "<br>";
+         }
+    }
+
+    for ($i = 1; $i <= 100; $i++) {
+        switch (true) {
+            case ($i % 3 == 0 && $i % 5 == 0):
+                echo "FizzBuzz <br>";
+                break;
+            case ($i % 3 == 0):
+                echo "Fizz <br>";
+                break;
+            case ($i % 5 == 0):
+                echo "Buzz <br>";
+                break;
+            default:
+                echo $i . "<br>";
+        }
+    }
+?>---------------------------------------------------------------------------->
+
+<?php 
+
+    for($i = 0; $i <=20; $i+=2) { 
+        echo $i . "<br>";
     }
 
 ?>
