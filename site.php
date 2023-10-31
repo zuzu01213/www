@@ -473,7 +473,7 @@ $counter = $_POST['counter'];
 for($i = $counter; $i > 0; $i--){
     echo $i . "<br>";
 }
-?>---->
+?>------------------------------------------------------------------------------------>
 <!--<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -512,7 +512,7 @@ for($i = $counter; $i > 0; $i--){
 
 ?>---->
 
-<?php 
+<!--<?php 
 
     // LESSON 10
 
@@ -520,10 +520,58 @@ for($i = $counter; $i > 0; $i--){
 
     $foods = array("apple", "orange", "banana", "coconut");
 
-    $foods[0] = "pineapple";
+    // $foods[0] = "pineapple";
+    // array_push($foods, "pineapple", "kiwi");
+    // array_pop($foods);
+    // array_shift($foods);
+    // $foods = $reversed_foods = array_reverse($foods);
+    // echo count($foods);
 
-   foreach($foods as $food){
-        echo $food . "<br>";
-   }
-?>
+    foreach ($foods as $food) {
+     echo $food . "<br>";     
+    }        
+?>----------------------------------------------------------------------------------------->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="site.php" method="post"></form>
+    <label for="">Enter a country</label> <br>
+    <input type="text" name="country">
+    <input type="submit">
+    </form>
+</body>
+</html>
+<?php
+
+    // LESSON 11
+    // associative array = array made of key=>value pairs
+    
+    $capitals = array("USA"=>"WASHINGTON D.C",
+                        "JAPAN"=>"TOKYO",
+                        "SOUTH KOREA"=>"SEOUL",
+                        "INDIA"=>"NEW DELHI");
+
+    // $capitals["USA"] = "LAS VEGAS";
+    // $capitals["CHINA"] = "BEIJING";
+    // array_pop($capitals);
+    // array_shift($capitals);
+    // $keys = array_keys($capitals);
+    // $values = array_values($capitals);
+    // $capitals = array_reverse($capitals);
+    // $capitals = array_flip($capitals);
+
+    // foreach ($capitals as $key => $value) {
+    //     echo "{$key} = {$value} <br>";
+    // }
+
+    $capital = $capitals[$_POST["country"]];
+    echo $capital;
+
+?> -->
+
 
