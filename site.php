@@ -537,9 +537,7 @@ for($i = $counter; $i > 0; $i--){
     // empty() = Returns TRUE if a variable is declared, false, null
     // unset() = Removes a variable from the current scope
 
-    $username = "michel";
-
-    echo isset($username);
+    echo "apa itu";
 ?>
 
 
