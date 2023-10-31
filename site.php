@@ -185,7 +185,7 @@
     </form>
 </body>
 </html>
-<?php
+<!-?php
     $radius = $_POST["radius"];
     $circumference = null;
     $area = null;
@@ -531,47 +531,16 @@ for($i = $counter; $i > 0; $i--){
      echo $food . "<br>";     
     }        
 ?>----------------------------------------------------------------------------------------->
-<--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="site.php" method="post">
-    <label for="">Enter a country</label> <br>
-    <input type="text" name="country">
-    <input type="submit">
-    </form>
-</body>
-</html>
-<?php
 
-    // LESSON 11
-    // associative array = array made of key=>value pairs
-    
-    $capitals = array("USA"=>"WASHINGTON D.C",
-                        "JAPAN"=>"TOKYO",
-                        "SOUTH KOREA"=>"SEOUL",
-                        "INDIA"=>"NEW DELHI");
+<?php 
+    // isset() = Returns TRUE if a variable is declared and not null
+    // empty() = Returns TRUE if a variable is declared, false, null
+    // unset() = Removes a variable from the current scope
 
-    // $capitals["USA"] = "LAS VEGAS";
-    // $capitals["CHINA"] = "BEIJING";
-    // array_pop($capitals);
-    // array_shift($capitals);
-    // $keys = array_keys($capitals);
-    // $values = array_values($capitals);
-    // $capitals = array_reverse($capitals);
-    // $capitals = array_flip($capitals);
+    $username = "michel";
 
-    // foreach ($capitals as $key => $value) {
-    //     echo "{$key} = {$value} <br>";
-    // }
+    echo isset($username);
+?>
 
-    $capital = $capitals[$_POST["country"]];
-    echo $capital;
-
-?> 
 
 
