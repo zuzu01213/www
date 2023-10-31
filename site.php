@@ -207,17 +207,29 @@
 ?> ---------------------------------------------------------------------------------------------------------->
 
 <?php 
-    $age = 0;
+        // IF AND ELSE STATEMENT
 
-    if ($age >= 18){
-        echo "You may enter this site";
-    } else if($age <= 0) {
+    $age = 6;
+
+    if ($age >= 17 && $age <=20 ){
+        echo "I see you in that phase right now don't you?";
+    } else if($age >= 0 && $age <=5) {
         echo"Please enter your age correctly";
-    } 
-    
+    } else if($age >= 100){
+        echo "aren't you to a little to old for this?";
+    } else if($age >= 6 && $age <= 13){
+        echo "Go way kiddo, you can't even produce semen right now.";
+    } else if($age >=20 && $age <= 29){
+        echo "Man, this is your golden age don't waste your time on this shit.";
+    } else if($age >=30 && $age <= 35){
+        echo "This is just sad, like really you are pathetic.";
+    } else if($age >= 35 && $age <=100){
+        echo "Ugh, i wanna throw up just by looking at you!!!";
+    } else if($age <=0){
+        echo "You haven't even born yet.";
+    }
     else {
         echo "You must be 18+ yo enter";
     }
-
-
+    
 ?>
