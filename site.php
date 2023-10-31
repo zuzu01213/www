@@ -209,11 +209,17 @@
 <?php 
         // IF AND ELSE STATEMENT
 
-    $age = 6;
+    $age = 12;
+    $adult = true;
+    if ($adult === true && $age >= 17) {
+        echo "You may enter <br>";
+    } else {
+        echo "You must be an adult to enter this site <br>";
+    }
 
-    if ($age >= 17 && $age <=20 ){
+    if ($age >= 17 && $age <=20 && $adult === true) {
         echo "I see you in that phase right now don't you?";
-    } else if($age >= 0 && $age <=5) {
+    } else if($age >= 0 && $age <=5 && $adult === false) {
         echo"Please enter your age correctly";
     } else if($age >= 100){
         echo "aren't you to a little to old for this?";
@@ -231,5 +237,6 @@
     else {
         echo "You must be 18+ yo enter";
     }
-    
+
 ?>
+

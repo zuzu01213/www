@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <script>
+    var message = "Hello";
+    message.length;
+    182 + 42
+    224 - 182;
+    //you have written 182 character, you have -42 left.
+    var tweet = prompt("Complete your tweet");
+    var tweetUnder140 = tweet.slice(0, 140);
+    alert(tweetUnder140);
+    var tweetCount = tweet.length;
+    alert("You have written " + tweetCount + " characters, you have " + (140 - tweetCount) + " characters remaining.");
+    alert(prompt("Compose your tweet").slice(0,14));
+    tweet.toUpperCase
+
+
+    var name = prompt("What is your name?");
+    var firstChar = name.slice(0, 1);
+    var upperCaseFirstChar = firstChar.toUpperCase();
+    var restOfChar = name.slice(1, name.length);
+    restOfChar = restOfChar.toLowerCase();
+    var capitalName = upperCaseFirstChar + restOfChar;
+    alert("Hello, " + capitalName);
+
+
+    var dogAge = prompt("How old is your dog? ");
+    var humanAge = (dogAge - 2) * 4 + 19;
+    alert("Your dog is " + humanAge + " years old in human years")
+    </script>
+</body>
+</html>
