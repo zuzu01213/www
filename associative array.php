@@ -24,7 +24,7 @@
                         "INDIA"=>"NEW DELHI");
 
 
-    $capital = $capitals[$_POST["country"]];
+    $capital = $capitals[$_POST['country']];
     echo $capital;
 
 ?> 

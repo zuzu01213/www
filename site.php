@@ -474,63 +474,7 @@ for($i = $counter; $i > 0; $i--){
     echo $i . "<br>";
 }
 ?>------------------------------------------------------------------------------------>
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="site.php" method="post" >
-        <input type="submit" name="stop" value="stop">
-    </form>
-</body>
-</html>
 
-<?php 
-
-    // LESSON 9
-
-    // while loop = do some code infinitely while some
-    // condition remains true
-
-    $seconds = 0;
-    $running = true;
-
-    while($running){
-
-        if(isset($_POST["stop"])){
-            $running = false;
-        }else {
-            // wait 1 seconds
-            $seconds++;
-            echo $seconds . "<br>";   
-        } 
-    }
-    
-
-?>---->
-
-<!--<?php 
-
-    // LESSON 10
-
-    // array = "variable" which can hold more than one value at a time
-
-    $foods = array("apple", "orange", "banana", "coconut");
-
-    // $foods[0] = "pineapple";
-    // array_push($foods, "pineapple", "kiwi");
-    // array_pop($foods);
-    // array_shift($foods);
-    // $foods = $reversed_foods = array_reverse($foods);
-    // echo count($foods);
-
-    foreach ($foods as $food) {
-     echo $food . "<br>";     
-    }        
-?>----------------------------------------------------------------------------------------->
 
 
 
