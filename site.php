@@ -531,7 +531,7 @@ for($i = $counter; $i > 0; $i--){
      echo $food . "<br>";     
     }        
 ?>----------------------------------------------------------------------------------------->
-<!--<!DOCTYPE html>
+<--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -539,7 +539,7 @@ for($i = $counter; $i > 0; $i--){
     <title>Document</title>
 </head>
 <body>
-    <form action="site.php" method="post"></form>
+    <form action="site.php" method="post">
     <label for="">Enter a country</label> <br>
     <input type="text" name="country">
     <input type="submit">
@@ -572,6 +572,6 @@ for($i = $counter; $i > 0; $i--){
     $capital = $capitals[$_POST["country"]];
     echo $capital;
 
-?> -->
+?> 
 
 
