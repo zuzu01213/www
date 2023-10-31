@@ -419,7 +419,7 @@
         // LESSON 8
 
         // for loop = repeat some code a certain of times
-    $counter = $_POST['counter'];
+    $counter = $_POST["counter"];
     for($i = 100; $i <=$counter; $i++){
          if($i % 3 === 0 && $i % 5 === 0){
             echo "FizzBuzz <br>";
@@ -531,14 +531,6 @@ for($i = $counter; $i > 0; $i--){
      echo $food . "<br>";     
     }        
 ?>----------------------------------------------------------------------------------------->
-
-<?php 
-    // isset() = Returns TRUE if a variable is declared and not null
-    // empty() = Returns TRUE if a variable is declared, false, null
-    // unset() = Removes a variable from the current scope
-
-    echo "apa itu";
-?>
 
 
 
