@@ -32,7 +32,12 @@
 
     var dogAge = prompt("How old is your dog? ");
     var humanAge = (dogAge - 2) * 4 + 19;
-    alert("Your dog is " + humanAge + " years old in human years")
+    if(dogAge < humanAge){
+        alert("please enter your dog's age")
+    } else{
+        alert("Your dog is " + humanAge + " years old in human years")   
+    }
+    
     </script>
 </body>
 </html>
