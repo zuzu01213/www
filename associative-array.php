@@ -25,6 +25,6 @@
 
 
     $capital = $capitals[$_POST['country']];
-    echo $capital;
+    echo "The capital is $capital";
 
 ?> 
