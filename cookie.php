@@ -9,4 +9,11 @@
     foreach($_COOKIE as $key => $value){
         
     }
+    if(isset($_COOKIE["fav_food"])){
+        echo "Buy Some  {$_COOKIE["fav_food"]}!!!";
+    } 
+    else {
+        echo "I don't know your favorite food!";
+    }
+
 ?>
