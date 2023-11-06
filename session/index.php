@@ -9,22 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-    This is the login page <br>
-    <a href="home.php">This goes to home page</a> <br>  
+    <form action="home.php" method="post" >
+    This is the login page <br> 
+    username: <br>
+    <input type="text" name="username"> <br>
+    Passowrd: <br>
+    <input type="password" name="password"  > <br>
+    <input type="submit" name="login" value="login"> <br>
+    <a href="home.php">This goes to the home page</a> <br>
+    </form>
 </body>
 </html>
-
-
 <?php 
-    // SESSION = SGB used to store information on a user
-    // to be across multiple pages.
-    // A user is assigned a session-id
-    // ex. login credentials
+    if(isset($_POST["login"])) {
+    
+        if(!empty($_POST["username"]) && !empty($_POST["password"])){
 
+            $_SESSION["username"] = $_POST["username"];
+            $_SESSION["password"] = $_POST["password"];
 
-    $_SESSION["usernames"] = "Keenan";
-    $_SESSION["password"] = "pizza123";
-
-    echo $_SESSION["usernames"] . "<br>";
-    echo $_SESSION["password"] . "<br>";
+          
+            header("Location: home.php");
+        }
+        else {
+            echo "Invalid username or password";
+        }
+    }
 ?>
